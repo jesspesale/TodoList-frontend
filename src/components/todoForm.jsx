@@ -22,7 +22,13 @@ const TodoForm = ({onFormSubmit}) => {
             onFinish={onFinish}
             layout="horizontal"
             className="todo-form" >
+         <Row gutter={20}>
+            <Col xs={24} sm={24} md={17} lg={19} xl={20}>
             
+            </Col>
+            <Col xs={24} sm={24} md={7} lg={5} xl={4}>
+            </Col>
+         </Row>   
         </Form>
     )
 }
