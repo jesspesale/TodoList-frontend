@@ -16,8 +16,14 @@ const TodoForm = ({onFormSubmit}) => {
 
         form.resetFields()
     }
-    render(
-        <Form></Form>
+    return(
+        <Form 
+            form={form}
+            onFinish={onFinish}
+            layout="horizontal"
+            className="todo-form" >
+            
+        </Form>
     )
 }
 
