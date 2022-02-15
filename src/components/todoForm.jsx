@@ -36,10 +36,10 @@ const TodoForm = ({onFormSubmit}) => {
                 <Button type="primary" htmlType="submit" block>
                     <PlusCircleFilled/>
                 </Button>
+                
             </Col>
          </Row>   
         </Form>
-
     )
 }
 
