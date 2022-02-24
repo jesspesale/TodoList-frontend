@@ -35,3 +35,23 @@ export const createTodo = (todo) => {
     }).then((res) => res.json())
 };
 
+export const updateTodo = (todo) => {
+  return fetch(`${baseUrl}/${todo.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+        it: todo.id,
+      title: todo.title,
+      completed: todo.completed,
+    }),
+  }).then((res) => res.json());
+};
+
+
+export const deleteTodo = (id) => {
+    return fetch(`${baseUrl}/${id}`, {
+        method: "DELETE",
+    }).then((res) => res.json())
+}
