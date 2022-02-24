@@ -1,5 +1,18 @@
-const baseURL = `${process.env.REACT_APP_API_URL}/todos`;
+// const baseUrl = "http://localhost:3000/todos";
 
-const = loadTodos = () => {
-    return fetch(baseURL).then((res) => res.json())
-}
+// export const loadTodos = () => {
+//     // console.log("Hi")
+//     return fetch(baseUrl).then((res) => res.json()).then(data => console.log(data))
+// }
+
+
+// const baseUrl = "localhost:3000/todos"; ??
+
+// const baseURL = `${process.env.REACT_APP_API_URL}/todos`;
+
+// export const loadTodos = () => {
+//     console.log("hi")
+//     return <h1>Hey</h1>
+//     // return fetch(baseUrl).then((res) => res.json()).then(data => console.log(data))
+
+// }

@@ -1,4 +1,4 @@
-const baseURL = `${process.env.REACT_APP_API_URL}/todos`;
+// const baseURL = `${process.env.REACT_APP_API_URL}/todos`;
 
 export const createTodo = (todo) => {
     return fetch(baseURL, {
