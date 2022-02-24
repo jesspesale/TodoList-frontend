@@ -1,4 +1,4 @@
-package.jsonimport React from "react"
+import React from "react"
 import {Button, Col, Row, Form, Input} from "antd"
 import {PlusCircleFilled} from "@ant-design/icons"
 
