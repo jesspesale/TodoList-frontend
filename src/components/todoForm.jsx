@@ -24,11 +24,10 @@ const TodoForm = ({onFormSubmit}) => {
         form={form}
         onFinish={onFinish}
         layout="horizontal"
-        className="todo-form"
-      >
+        className="todo-form" >
         <Row gutter={20}>
           <Col xs={24} sm={24} md={17} lg={19} xl={20}>
-            <Button></Button>
+
           </Col>
           <Col xs={24} sm={24} md={7} lg={5} xl={4}>
             <Form.Item
