@@ -15,11 +15,15 @@ export default function TodoList() {
 
   return (
     <div>
-        {/* {loadTodos.map(todo => {
-            console.log(todo)
-        })} */}
+        <div>Things you have to do: </div>
         {console.log(todos)}
-        <div>TodoList</div>
+        {todos.map((todo) => {
+            return(
+                <li>
+                    {todo.title}
+                </li>
+            )
+        })}
     </div>
   );
 }
