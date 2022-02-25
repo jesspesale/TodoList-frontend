@@ -1,7 +1,7 @@
 import './App.css';
 import { Button } from 'antd';
-// import TodoForm from "./components/TodoForm"
-import Form from "./components/Form"
+import TodoForm from "./components/TodoForm"
+import TodoList from './components/TodoList';
 // import {loadTodos} from "./actions/todoService"
 
 function App() {
@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <h1>Hello from react </h1>
-      <Button type="primary">Button</Button>
-      <Form></Form>
-      {/* <TodoForm></TodoForm> */}
+      <TodoList/>
+      {/* <Button type="primary">Button</Button> */}
+      <TodoForm></TodoForm>
     </div>
   );
 }
