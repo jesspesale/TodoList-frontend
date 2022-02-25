@@ -11,6 +11,7 @@ function App() {
       <h1>Hello from react </h1>
       <TodoList/>
       {/* <Button type="primary">Button</Button> */}
+      <br></br>
       <TodoForm></TodoForm>
     </div>
   );
