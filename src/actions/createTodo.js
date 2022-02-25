@@ -1,16 +1,15 @@
-// const baseURL = `${process.env.REACT_APP_API_URL}/todos`;
+const baseUrl = "http://localhost:3000/todos";
 
-// export const createTodo = (todo) => {
-//     return fetch(baseURL, {
-//         method: "POST",
-//         headers: {
-//             "Content-Type": "application/json",
-//             "Accept": "application/json"
-//         },
-//         body: JSON.stringify({
-//             title: todo.title,
-//             completed: todo.completed
-//         })
-//         .then((res) => res.json())
-//     })
-// }
+export const createTodo = (todo) => {
+  console.log(todo);
+  return fetch(baseUrl, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      title: todo,
+      completed: false,
+    }),
+  }).then((res) => res.json());
+};
