@@ -1,6 +1,6 @@
 import './App.css';
 import { Button } from 'antd';
-import TodoForm from "./components/TodoForm"
+// import TodoForm from "./components/TodoForm"
 import Form from "./components/Form"
 // import {loadTodos} from "./actions/todoService"
 
