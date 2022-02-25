@@ -11,8 +11,7 @@ export default function TodoForm() {
 
   const handleSubmit = (e) => {
       e.preventDefault();
-      
-      console.log(input)
+  
       createTodo(input)
       setInput("")
   }
