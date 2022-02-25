@@ -5,6 +5,7 @@ export default function TodoItem({key, todo, completed}) {
     <div>
       <li id={key}>
         {todo}
+        <button>X</button>
       </li>
     </div>
   );
