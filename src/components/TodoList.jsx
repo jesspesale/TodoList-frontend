@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
+import TodoItem from './TodoItem';
 // import { loadTodos } from '../actions/loadTodos'
 
 export default function TodoList({todos, setTodos}) {
-
-    
 
     useEffect(() => {
         fetch("http://localhost:3000/todos")
@@ -17,9 +16,13 @@ export default function TodoList({todos, setTodos}) {
         <div>Things you have to do: </div>
         {todos.map((todo) => {
             return(
-                <li key={todo.id} className="todo-list">
-                    {todo.title}
-                </li>
+                <div key={todo.id}>
+                    <TodoItem 
+                        todo={todo.title}
+                        id={todo.id}
+                        completed={todo.completed}
+                    />
+                </div>
             )
         })}
     </div>
