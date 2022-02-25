@@ -1,7 +1,11 @@
 @import '~antd/dist/antd.css';
 
-.App{
-    padding-right: 60px;
+.app{
+    padding: 30px 150px;
     /* text-align: center; */
+    /* padding: 30px 200px; */
 } 
 
+.todo-list{
+    padding: 10px;
+}
