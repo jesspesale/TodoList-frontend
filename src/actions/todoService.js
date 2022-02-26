@@ -37,8 +37,4 @@ export const updateTodo = (todo) => {
   }).then((res) => res.json());
 };
 
-export const deleteTodo = (id) => {
-  return fetch(`${baseUrl}/${id}`, {
-    method: "DELETE",
-  }).then((res) => res.json());
-};
+
