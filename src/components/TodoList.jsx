@@ -8,7 +8,7 @@ export default function TodoList({todos, setTodos}) {
         fetch("http://localhost:3000/todos")
         .then((res) => res.json())
         .then(todos => setTodos(todos))
-    }, [todos])
+    }, [])
 
 
   return (
