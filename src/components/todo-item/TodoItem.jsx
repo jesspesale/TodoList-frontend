@@ -1,13 +1,21 @@
 import React from 'react'
 import "./todoItem.css"
-// import {deleteTodo} from "../actions/deleteTodo"
+import {deleteTodo} from "../../actions/deleteTodo"
 
-export default function TodoItem({key, todo, completed}) {
+export default function TodoItem({id, todo, completed}) {
+
+  const handleDelete = (id) => {
+    console.log(id)
+    deleteTodo(id)
+  }
+
   return (
     <div>
-      <li id={key}>
+      <li>
         {todo}
-        <button className="delete-button">X</button>
+        <button  
+        onClick={() => handleDelete(id)} 
+        className="delete-button">X</button>
       </li>
     </div>
   );
